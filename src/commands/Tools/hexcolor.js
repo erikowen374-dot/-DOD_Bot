@@ -11,7 +11,7 @@ export default {
         .setDescription('Generate a random hex color with preview')
         .addStringOption(option =>
             option.setName('color')
-                .setDescription('Specific hex color (e.g., #FF5733 or FF5733)')
+                .setDescription('Specific hex color (e.g., #FF0000 or FF0000)')
                 .setRequired(false)),
 
     async execute(interaction) {
