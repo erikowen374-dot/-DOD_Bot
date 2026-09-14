@@ -27,7 +27,7 @@ export default {
                 } else {
                     hexColor = hexColor.replace('#', '');
                     if (!/^[0-9A-Fa-f]{3,6}$/.test(hexColor)) {
-                        return await replyUserError(interaction, { type: ErrorTypes.VALIDATION, message: 'Please provide a valid hex code.\n\n**Valid formats:**\n• `#FF5733` (with hash)\n• `FF5733` (without hash)\n• `F57` (3-digit shorthand)\n\n**Invalid:** `#GG5733` (G is not a hex digit)' });
+                        return await replyUserError(interaction, { type: ErrorTypes.VALIDATION, message: 'Please provide a valid hex code.\n\n**Valid formats:**\n• `#FF0000` (with hash)\n• `FF0000` (without hash)\n• `F57` (3-digit shorthand)\n\n**Invalid:** `#GG5733` (G is not a hex digit)' });
                     }
 
                     if (hexColor.length === 3) {
